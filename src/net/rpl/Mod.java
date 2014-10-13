@@ -13,4 +13,14 @@ public @interface Mod {
 	String name() default "";
 
 	String version() default "";
+
+	@Retention(value = RetentionPolicy.RUNTIME)
+	@Target(value = ElementType.METHOD)
+	public @interface ModLoad {
+	}
+
+	@Retention(value = RetentionPolicy.RUNTIME)
+	@Target(value = ElementType.METHOD)
+	public @interface ModUnload {
+	}
 }
