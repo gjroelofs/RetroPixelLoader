@@ -1,7 +1,8 @@
-/bin/
 /res
 /maps
 /logs
-/lib
-/settings.properties
+settings.properties
 .classpath
+.project
+/target/
+.settings

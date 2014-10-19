@@ -1,0 +1,73 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>rpl</groupId>
+	<artifactId>RetroPixelLoader</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>RetroPixelLoader</name>
+	<description>a mod loader and API for RPC</description>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.1</version>
+				<configuration>
+					<source>1.7</source>
+					<target>1.7</target>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+	<dependencies>
+		<dependency>
+			<groupId>jboss</groupId>
+			<artifactId>javassist</artifactId>
+			<version>3.7.ga</version>
+		</dependency>
+		<dependency>
+			<groupId>com.retropixelcastles</groupId>
+			<artifactId>Core</artifactId>
+			<version>10-14-2014b</version>
+			<scope>system</scope>
+			<systemPath>${project.basedir}/lib/Core.jar</systemPath>
+		</dependency>
+		<dependency>
+			<groupId>org.jcraft</groupId>
+			<artifactId>jorbis</artifactId>
+			<version>0.0.17</version>
+			<scope>system</scope>
+			<systemPath>${project.basedir}/lib/jars/jorbis-0.0.15.jar</systemPath>
+		</dependency>
+		<dependency>
+			<groupId>org.lwjgl.lwjgl</groupId>
+			<artifactId>lwjgl</artifactId>
+			<version>2.9.1</version>
+			<scope>system</scope>
+			<systemPath>${project.basedir}/lib/jars/lwjgl.jar</systemPath>
+		</dependency>
+		<dependency>
+			<groupId>net.sf.trove4j</groupId>
+			<artifactId>trove4j</artifactId>
+			<version>3.1a1</version>
+			<scope>system</scope>
+			<systemPath>${project.basedir}/lib/jars/trove-3.1a1.jar</systemPath>
+		</dependency>
+		<dependency>
+			<groupId>org.slick2d</groupId>
+			<artifactId>slick</artifactId>
+			<version>0.0.1</version>
+			<scope>system</scope>
+			<systemPath>${project.basedir}/lib/jars/slick.jar</systemPath>
+		</dependency>
+		<dependency>
+			<groupId>org.jcraft</groupId>
+			<artifactId>jogg</artifactId>
+			<version>0.0.7</version>
+			<scope>system</scope>
+			<systemPath>${project.basedir}/lib/jars/jogg-0.0.7.jar</systemPath>
+		</dependency>
+	</dependencies>
+</project>
