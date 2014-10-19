@@ -60,11 +60,13 @@ public class ModLoader {
 			mods.add(mod);
 		}
 
-		RetroPixelLoader.info("Modloading complete!");
+		RetroPixelLoader.info("Mod loading complete!");
 	}
 
 	public void unloadMods() throws IllegalAccessException, IllegalArgumentException, InvocationTargetException {
 		for (ModWrapper mod : mods) {
+			RetroPixelLoader.info(String.format("Unloading mod - id: %s - name: %s - version: %s ", mod.getId(), mod.getName(), mod.getVersion()));
+
 			mod.unload();
 		}
 	}

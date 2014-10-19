@@ -4,6 +4,7 @@ import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 
 import net.rpl.Mod.ModLoad;
+import net.rpl.Mod.ModUnload;
 
 public class ModWrapper {
 
@@ -23,9 +24,7 @@ public class ModWrapper {
 		for (Method m : instance.getClass().getDeclaredMethods()) {
 			if (m.isAnnotationPresent(ModLoad.class))
 				loadMethod = m;
-		}
-		for (Method m : instance.getClass().getDeclaredMethods()) {
-			if (m.isAnnotationPresent(Mod.ModUnload.class))
+			if (m.isAnnotationPresent(ModUnload.class))
 				unloadMethod = m;
 		}
 	}

@@ -23,6 +23,7 @@ public class RetroPixelLoader {
 	private static void takeOver() throws Exception {
 		info("Starting takeover...");
 		System.setSecurityManager(new RPLSecurityManager());
+		System.setProperty("runInEclipse", "true");
 		info("Done!");
 	}
 

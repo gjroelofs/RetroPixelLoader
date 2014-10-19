@@ -1,6 +1,7 @@
 package test;
 
 import net.rpl.Mod;
+import net.rpl.ObjectRegistry;
 import net.rpl.Mod.ModLoad;
 import net.rpl.Mod.ModUnload;
 
@@ -9,6 +10,7 @@ public class TestMod {
 	@ModLoad
 	public void load() {
 		System.out.println("Loaded");
+		ObjectRegistry.registerObject("objectTest", ObjectTest.class);
 	}
 
 	@ModUnload
